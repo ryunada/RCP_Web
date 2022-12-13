@@ -16,6 +16,8 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path, include
 from mysite.views import HomeView
+from django.conf.urls.static import static
+from django.conf import settings
 
 urlpatterns = [
     path("admin/", admin.site.urls),
@@ -23,5 +25,7 @@ urlpatterns = [
     path('', HomeView.as_view(), name = 'home'),
     path('bookmark/', include('bookmark.urls')),
     path('', include('blog.urls'))
-    
+       
 ]
+
+urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
