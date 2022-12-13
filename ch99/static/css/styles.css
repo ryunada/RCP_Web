@@ -10,6 +10,79 @@
  * Copyright 2011-2021 Twitter, Inc.
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
  */
+/* 재료 이미지 */
+ 
+
+
+
+  .rcp1{
+    float: left;
+    border: 1px solid white; 
+    width: 50%;
+    height: 50%;
+   }
+   .a{
+    padding-left: 10%;
+   }
+
+  .rec{
+    font-size: 30px;
+    text-align: end;
+    padding: 1%;
+    /* border: 1px solid white; */
+    margin-top: 1%;
+    padding-right: 12%;
+  }
+  .rec span{
+    position: relative;
+    color: white;
+    top: 5px;
+    padding-left: 10px;
+  }
+  .img_icon1{
+    height: 50px;
+    width: 50px;
+  }
+  .ingredient_icon{
+    float: left;
+    padding-left: 26%;
+  }
+  .img_icon2{
+    height: 50px;
+    width: 50px;
+    
+    /* margin-left: 70%; */
+  }
+  .img-first{
+    float: left;
+    border:  1px solid white;
+    left: 70%;
+  }
+  .rcp1 .img1{
+    width: 100%;
+    height: 100%;
+  }
+  .rcp1 .img2{
+    width: 100%;
+    height: 100%;
+  }
+  .rcp1 .img3{
+    width: 100%;
+    height: 100%;
+  }
+  .rcp1 .img4{
+    width: 100%;
+    height: 100%;
+  }
+
+.last_img{
+  width: 30px;
+  height: 50px;
+}
+
+
+
+
 :root {
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
@@ -63,6 +136,10 @@
   --bs-body-color: #212529;
   --bs-body-bg: #fff;
 }
+
+
+
+
 
 *,
 *::before,
@@ -6163,8 +6240,8 @@ textarea.form-control-lg {
   background-color: #fff;
   background-clip: padding-box;
   border: 0;
-  border-top: 10px solid transparent;
-  border-bottom: 10px solid transparent;
+  border-top: 100px solid transparent;
+  border-bottom: 100px solid transparent;
   opacity: 0.5;
   transition: opacity 0.6s ease;
 }
@@ -7772,7 +7849,7 @@ textarea.form-control-lg {
 }
 .text-head{
   --bs-text-opacity: 1;
-  color: red;
+  color: #fff;
 }
 
 .text-body {
@@ -7820,6 +7897,7 @@ textarea.form-control-lg {
   --bs-bg-opacity: 1;
   /* background-color: rgba(var(--bs-primary-rgb), var(--bs-bg-opacity)) !important; */
   background-color: rgb(48,46,45);
+  /* background-color: #fff; */
 }
 
 .bg-secondary {
@@ -11310,7 +11388,7 @@ body {
 
 /**/
 .page-section1 .section1{
-  border: 2px solid red;
+  /* border: 2px solid red; */
   width: 90%;
   height: 80%;
   /* padding-top: 3rem; */
@@ -11321,31 +11399,29 @@ body {
   
 }
 .section1 .image-box{
-  border: 2px solid blue;
+  /* border: 2px solid blue; */
   width: inherit;
   height: inherit;
   position: relative;
-  margin-top: 5%;
   margin-left: 5%;
   float: left;
 }
 .image-ingredient{
-  
-  background-color: #000;
+  /* background-color: #000; */
   width: 60%;
   height: 100%;
   /* object-fit: cover; */
   float: left;
 }
 .txt-box-ingredient{
-  border: #0c4128;
+  border: 5px solid #000;
   background-color: #fff;
   width: 10%;
   height: 100%;
   float: left;
 }
 .rcp-box{
-  border: 2px solid green;
+  /* border: 2px solid green; */
   width: 30%;
   height: 100%;
   /* margin-right: 5%; */
@@ -11353,12 +11429,7 @@ body {
   margin-left: 5%;
   margin-right: 5%; */
   float: left;
-}
-.rcp1{
-  float:left;
-  border: #fff;
-  width: 50%;
-  height: 50%;
+  padding-left: 1%;
 }
 
 
@@ -11374,7 +11445,15 @@ body {
   
 }
 .page-section2 {
-  padding: 30rem 0;
+  width: 100%;
+  height: 150%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  /* padding: 30rem 0; */
+}
+.page-section{
+  width: 100%;
+  height: 100%;
 }
 
 .text-white-75 {
@@ -11404,8 +11483,9 @@ hr.divider-light {
 
 #mainNav {
   box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
-  background-color: #fff;
+  /* background-color: white; */
   transition: background-color 0.2s ease;
+  background: fixed;
 }
 #mainNav .navbar-brand {
   font-family: "Merriweather Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
@@ -11467,7 +11547,7 @@ hr.divider-light {
 header.masthead {
   padding-top: 10rem;
   padding-bottom: calc(10rem - 4.5rem);
-  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../assets/img/bg-masthead.jpg");
+  background: linear-gradient(to bottom, rgba(92, 77, 66, 0.8) 0%, rgba(92, 77, 66, 0.8) 100%), url("../img/bg-masthead.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: scroll;
