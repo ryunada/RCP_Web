@@ -160,13 +160,13 @@ with open('./ch99/yolonew/lgbm_t.pkl', 'rb') as f:
 
 Gender = 1
 Age = 20
-Temperature = 20.0
-Precipitation = 0.0
-Humidity = 0.0
+Temperature = -6.0
+Precipitation = 0.0 # 강수량
+Humidity = 0.33
 Cloud = 0.0
 Month = 12
 Season = 4
-Weekday = 5
+Weekday = 6
 
 # print(df2)
 

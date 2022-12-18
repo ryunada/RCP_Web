@@ -31,7 +31,7 @@
                         <li class="nav-item"><a class="nav-link" href="#about">Recognize</a></li>
                         <!-- <li class="nav-item"><a class="nav-link" href="#services">Chart</a></li> -->
                         <li class="nav-item"><a class="nav-link" href="#Chart">Dashboard</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#contact">Login</a></li>
+                        {% comment %} <li class="nav-item"><a class="nav-link" href="#contact">Login</a></li> {% endcomment %}
                     </ul>
                 </div>
             </div>
@@ -53,7 +53,6 @@
             </div>
         </header>
         <!-- About-->
-        
         <section class="page-section1 bg-primary" id="about">
             <div class='section1'>
                 <div>
@@ -67,8 +66,44 @@
                         </div>
                     </div>
                 </div>
-                <div class="image-box">
-                    <img class = 'image-ingredient' src="static/img/ingredient_i.png">
+                 <div class="image-box">
+                    <div class = 'image-ingredient'>     
+                        <img class = "logo" src='/static/img/image_re.png'>
+                        {% comment %} <div class="container">s
+                            <div class="image-upload" id="image-upload">
+                    
+                                <form method="post" enctype="multipart/form-data">
+                                    <div class="button">
+                                        <label for="chooseFile">
+                                            👉 CLICK HERE! 👈
+                                        </label>
+                                    </div>
+                                    <input type="file" id="chooseFile" name="chooseFile" accept="image/*" onchange="loadFile(this)">
+                                </form>
+                    
+                                <div class="fileContainer">
+                                    <div class="fileInput">
+                                        <p>FILE NAME: </p>
+                                        <p id="fileName"></p>
+                                    </div>
+                                    <div class="buttonContainer">
+                                        <div class="submitButton" id="submitButton">SUBMIT</div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <div class="image-show" id="image-show"></div>
+                        </div> {% endcomment %}
+                    </div>
+                    {% comment %} <img class = 'image-ingredient' src="static/img/ingredient_i.png"> {% endcomment %}
+                    {% comment %} <form method="post" enctype="multipart/form-data">
+                        <div class="button">
+                            <label for="chooseFile">
+                                👉 CLICK HERE! 👈
+                            </label>
+                        </div>
+                        <input type="file" id="chooseFile" name="chooseFile" accept="image/*" onchange="loadFile(this)">
+                    </form> {% endcomment %}
                     <textarea class="txt-box-ingredient">재료명</textarea>
                     <div class="rcp-box">
                         <!--
@@ -86,13 +121,13 @@
                     
                 </div>
             </div>
-
         </section>
 
 
         <!-- Chart -->
         <div  class = 'page-section2' id = 'Chart'>
-            <div class='tableauPlaceholder' id='viz1670920635888' style='position: relative'><noscript><a href='#'><img alt='대시보드 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;_1&#47;_16709167479310&#47;1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='_16709167479310&#47;1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;_1&#47;_16709167479310&#47;1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='ko-KR' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1670920635888');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='1827px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+            {% comment %} <div class='tableauPlaceholder' id='viz1670920635888' style='position: relative'><noscript><a href='#'><img alt='대시보드 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;_1&#47;_16709167479310&#47;1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='_16709167479310&#47;1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;_1&#47;_16709167479310&#47;1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='ko-KR' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1670920635888');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='1827px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script> {% endcomment %}
+            <div class='tableauPlaceholder' id='viz1671094092766' style='position: relative'><noscript><a href='#'><img alt='대시보드 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;_1&#47;_16709167479310&#47;1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='_16709167479310&#47;1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;_1&#47;_16709167479310&#47;1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='ko-KR' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1671094092766');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='100%';vizElement.style.height=(divElement.offsetWidth*0.75)+'px';} else { vizElement.style.width='100%';vizElement.style.height='1827px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
         </div>
 
 
@@ -104,69 +139,7 @@
             </div> -->
         </section>
         <!-- Contact-->
-        <section class="page-section" id="contact">
-            <div class="container px-4 px-lg-5">
-                <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-lg-8 col-xl-6 text-center">
-                        <h1 class="mt-0">로그인<h1>
-                        <h3 class="mt-0">Login</h3>
-                        {% comment %} <hr class="divider" /> {% endcomment %}
-                        <p class="text-muted mb-5"> 고민을 덜고싶다면~ </p>
-                    </div>
-                </div>
-                <div class="row gx-4 gx-lg-5 justify-content-center mb-5">
-                    <div class="col-lg-6">
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- * * SB Forms Contact Form * *-->
-                        <!-- * * * * * * * * * * * * * * *-->
-                        <!-- This form is pre-integrated with SB Forms.-->
-                        <!-- To make this form functional, sign up at-->
-                        <!-- https://startbootstrap.com/solution/contact-forms-->
-                        <!-- to get an API token!-->
-                        <form id="contactForm" data-sb-form-api-token="API_TOKEN">
-                            <!-- Name input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="name" type="text" placeholder="Enter your ID..." data-sb-validations="required" />
-                                <label for="name">아이디/계정</label>
-                                <div class="invalid-feedback" data-sb-feedback="name:required">아이디/계정을 입력하세요.</div>
-                            </div>
-                            <!-- Password address input-->
-                            <div class="form-floating mb-3">
-                                <input class="form-control" id="password" type="password" placeholder="password" data-sb-validations="required" />
-                                <label for="password">비밀번호</label>
-                                <div class="invalid-feedback" data-sb-feedback="password:required">비밀번호를 입력하세요.</div>
-                                {% comment %} <div class="invalid-feedback" data-sb-feedback="email:email">Email is not valid.</div> {% endcomment %}
-                            </div>
-                            <!-- Submit success message-->
-                            <!---->
-                            <!-- This is what your users will see when the form-->
-                            <!-- has successfully submitted-->
-                            <div class="d-none" id="submitSuccessMessage">
-                                <div class="text-center mb-3">
-                                    <div class="fw-bolder">Form submission successful!</div>
-                                    To activate this form, sign up at
-                                    <br />
-                                    <a href="https://startbootstrap.com/solution/contact-forms">https://startbootstrap.com/solution/contact-forms</a>
-                                </div>
-                            </div>
-                            <!-- Submit error message-->
-                            <!---->
-                            <!-- This is what your users will see when there is-->
-                            <!-- an error submitting the form-->
-                            <div class="d-none" id="submitErrorMessage"><div class="text-center text-danger mb-3">로그인 시도 실패!</div></div>
-                            <!-- Submit Button-->
-                            <div class="d-grid"><button class="btn btn-primary btn-xl disabled" id="submitButton" type="submit">로그인</button></div>
-                        </form>
-                    </div>
-                </div>
-                <div class="row gx-4 gx-lg-5 justify-content-center">
-                    <div class="col-lg-4 text-center mb-5 mb-lg-0">
-                        <i class="bi-phone fs-2 mb-3 text-muted"></i>
-                        <div>문의 사항 : 010-3406-3079</div>
-                    </div>
-                </div>
-            </div>
-        </section>
+        
         <!-- Footer-->
         <footer class="bg-light py-5">
             <div class="container px-4 px-lg-5"><div class="small text-center text-muted"> &copy; 2022 - Only 1ST</div></div>
@@ -183,5 +156,46 @@
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
         <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-    </body>
+        <script>
+            var submit = document.getElementById('submitButton');
+            submit.onclick = showImage;     //Submit 버튼 클릭시 이미지 보여주기
+
+            function showImage() {
+                var newImage = document.getElementById('image-show').lastElementChild;
+                newImage.style.visibility = "visible";
+                
+                document.getElementById('image-upload').style.visibility = 'hidden';
+
+                document.getElementById('fileName').textContent = null;     //기존 파일 이름 지우기
+            }
+
+
+            function loadFile(input) {
+                var file = input.files[0];
+
+                var name = document.getElementById('fileName');
+                name.textContent = file.name;
+
+                var newImage = document.createElement("img");
+                newImage.setAttribute("class", 'img');
+
+                newImage.src = URL.createObjectURL(file);  
+
+                newImage.style.width = "90%";
+                newImage.style.height = "80%";
+                newImage.style.visibility = "hidden";   //버튼을 누르기 전까지는 이미지 숨기기
+                newImage.style.objectFit = "contain";
+                
+                var container = document.getElementById('image-show');
+                container.appendChild(newImage);
+
+                
+                var saveImage = newImage.toDataURL();
+                downloadURI(saveImage, "./ch99/yolonew/인식전.jpg")
+            };
+          
+
+        </script>
+    </body> 
 </html>
+

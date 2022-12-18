@@ -11382,7 +11382,11 @@ body {
   width: 100%;
   height: 100%;
 }
-
+/* 마지막 이미지 */
+.logo {
+  width: 100% !important;
+  height: 100% !important;
+}
 /**/
 .page-section1 .section1{
   /* border: 2px solid red; */
@@ -11399,9 +11403,9 @@ body {
   /* border: 2px solid blue; */
   width: inherit;
   height: inherit;
-  position: relative;
+  /* position: relative; */
   margin-left: 5%;
-  float: left;
+  /* float: left; */
 }
 .image-ingredient{
   border: 2px solid black;
@@ -11430,6 +11434,96 @@ body {
   padding-left: 1%;
 }
 
+/* 이미지 첨부 */
+.container {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+}
+
+.image-upload {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 10%;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+}
+
+label {
+  cursor: pointer;
+  font-size: 1em;
+}
+
+#chooseFile {
+  visibility: hidden;
+}
+
+.fileContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fileInput {
+  display: flex;
+  align-items: center;
+  border-bottom: solid 2px black;
+  width: 60%;
+  height: 30px;
+}
+
+#fileName {
+  margin-left: 5px;
+}
+
+.buttonContainer {
+  width: 15%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 10px;
+  background-color: black;
+  color: white;
+  border-radius: 30px;
+  padding: 10px;
+  font-size: 0.8em;
+
+  cursor: pointer;
+}
+
+.image-show {
+    z-index: auto;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 100%;
+    height: 100%;
+  
+  
+  
+  
+  
+  
+  /* z-index: -1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  width: 100%;
+  height: 100%; */
+}
+
+.img {
+  position: absolute;
+  left: 15%;
+}
+
 
 
 .page-section1 {
@@ -11444,7 +11538,7 @@ body {
 }
 .page-section2 {
   width: 100%;
-  height: 160%;
+  height: 100%;
   padding-top: 1rem;
   padding-bottom: 1rem;
   /* padding: 30rem 0; */
